@@ -14,6 +14,14 @@ function createSceneWindow()
         // Place the sceneWindow on the Canvas
         Canvas.setContent( mySceneWindow );                     
     }
+    //Note that the SceneWindow's camera defaults to the following values, you could omit them entirely and       
+    //obtain the same result.
+
+    mySceneWindow.setCameraPosition( 0, 0 );
+    mySceneWindow.setCameraSize( 100, 75 );
+    mySceneWindow.setCameraZoom( 1 );
+    mySceneWindow.setCameraAngle( 0 );
+}
 	function destroySceneWindow()
 {
     // Finish if no window available.
@@ -22,13 +30,4 @@ function createSceneWindow()
     
     // Delete the window.
     mySceneWindow.delete();
-}
-
-    //Note that the SceneWindow's camera defaults to the following values, you could omit them entirely and       
-    //obtain the same result.
-
-    mySceneWindow.setCameraPosition( 0, 0 );
-    mySceneWindow.setCameraSize( 100, 75 );
-    mySceneWindow.setCameraZoom( 1 );
-    mySceneWindow.setCameraAngle( 0 );
 }

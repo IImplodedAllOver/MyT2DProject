@@ -1,4 +1,4 @@
-//-------------------------- 3/16/2013 -- 23:23:13 -----
+//-------------------------- 3/17/2013 -- 12:58:57 -----
 Console trace is off.
 --------------------------------------------------------------------------------
 Video Initialization:
@@ -43,31 +43,7 @@ Max Texture Size reported as: 16384
 OpenGLDevice::setScreenMode -- can't switch to resolution larger than desktop in windowed mode!
 OpenAL Driver Init
 OpenAL Driver Init Success
-C:/Users/Elijah/Documents/GitHub/MyT2DProject/modules/MyModule/main.cs Line: 7 - parse error
->>> Advanced script error report.  Line 7.
->>> Some error context, with ## on sides of error halt:
-unction MyModule::create( %this )
-{
-^// Load GUI profiles.
-^exec("./gui/guiProfiles.cs");
-^exec("./scripts/scenewindow.cs");
-^exec("./scripts/scene.cs")
-^exec("./scripts/background.cs");
-##^##exec("./scripts/spaceship.cs");
-^exec("./scripts/asteroids.cs");
-^createSceneWindow();
-^createScene();
-^mySceneWindow.setScene(myScene);
-^createBackground();
-^createSpaceShip();
-^createAsteroids(20); 
-}
-
-function MyModule::destroy( %this )
-{
-}
->>> Error report complete.
-
+Failed to load profile bitmap ((null))
 Shutting down the OpenGL display device...
 Making the GL rendering context not current...
 Deleting the GL rendering context...
